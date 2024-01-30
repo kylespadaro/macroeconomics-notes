@@ -1,0 +1,613 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+
+\colorlet{LightGray}{White!90!Periwinkle}
+\colorlet{LightOrange}{Orange!15}
+\colorlet{LightGreen}{Green!15}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\declaretheoremstyle[name=,]{thmsty}
+\declaretheorem[style=thmsty,numberwithin=section]{theorem}
+\tcolorboxenvironment{theorem}{colback=LightGray}
+
+\declaretheoremstyle[name=,]{prosty}
+\declaretheorem[style=prosty,numberlike=theorem]{proposition}
+\tcolorboxenvironment{proposition}{colback=LightOrange}
+
+\declaretheoremstyle[name=Principle,]{prcpsty}
+\declaretheorem[style=prcpsty,numberlike=theorem]{principle}
+\tcolorboxenvironment{principle}{colback=LightGreen}
+
+\setstretch{1.2}
+\geometry{
+    textheight=9in,
+    textwidth=5.5in,
+    top=1in,
+    headheight=12pt,
+    headsep=25pt,
+    footskip=30pt
+}
+
+% ------------------------------------------------------------------------------
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% Cover Page and ToC
+% ------------------------------------------------------------------------------
+
+\title{ \normalsize \textsc{}
+		\\ [2.0cm]
+		\HRule{1.5pt} \\
+		\LARGE \textbf{\uppercase{Macroeconomics}
+		\HRule{2.0pt} \\ [0.6cm] \LARGE{Fall 2023} \vspace*{10\baselineskip}}
+		}
+\date{}
+\author{\textbf{Kyle Spadaro}}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+% ------------------------------------------------------------------------------
+
+\section{Introduction}
+
+This document contains my notes for Macroeconomics, taken in Fall 2023.
+
+\textbf{Economics} - The study of how society utilizes its scarce resources  among competing views.
+
+Economics is broken down into two main categories: Microeconomics and Macroeconomics.
+
+\begin{theorem}
+    \textbf{Microeconomics} - The study of the individual parts of decision makers within an economy.
+\end{theorem}
+
+\textbf{Consumers}
+
+\textbf{Producers}
+
+\textbf{Government}
+
+\textbf{International Participants}
+
+\begin{theorem}
+    \textbf{Macroeconomics} - The study of the economy as a whole... the big picture.
+\end{theorem}
+
+Increased demand leads to increased production. As a result, GDP increases, leading to the unemployment and inflation rates decreasing.
+
+\section{The Ten Principles of Economics}
+\begin{enumerate}
+    \item{\textbf{People face trade-offs.} Every decision made involves some sort of trade-off. Most trade-offs we face as individuals are manageable. A good example is going to a restaurant with lots of choices. By getting one menu item, you are forgoing all of the other options on the menu.
+    
+    From a macro perspective, trade-offs become a lot more difficult. When a government considers something, they have to consider what is fair, or what they are doing to get the most out of the limited resources we have.
+    
+    \textit{Efficiency} - Maximum use of the resources used.
+    
+    \textit{Equity} - Fairness. A relatable example for college students is financial aid.}
+
+    \item{\textbf{The cost of something is what you give up in order to get it.}}
+
+    \textit{Opportunity Cost} - What you give up or sacrifice in order to get something else.
+
+    \item{\textbf{Economists assume that people are rational.} Rational people make choices in their best interest at the moment they make those choices.}
+
+    \item{\textbf{People respond to incentives.}
+
+    \textit{Incentive} - Something that encourages a person to behave differently.
+
+    Incentives work well, because people don't think they are bribes. They cause rational people to think they are good ideas.
+
+    Example: Cash for clunkers (2008)}
+
+    \item{\textbf{Trade can make everyone better-off}
+
+    Trade is not a zero sum game - benefits from trade exist for all parties, but those benefits are not equally distributed.
+
+    \textbf{Benefits of trade}:
+    
+    - Increases the variety of goods consumers have available to them.
+
+    - Better quality of goods available
+
+    - Lowered cost to consumers
+
+    - Greater market share for firms}
+
+    \item{\textbf{Markets are a good way to organize economic activity}
+
+    \textbf{Market} = Any transactions or exchange between a buyer and seller.
+
+    \textit{"Organize economic activity"} means a few things:
+
+    \begin{itemize}
+        \item What goods should be produced
+        \item Who will produce said goods
+        \item Who will buy them
+        \item What will the price be
+        \item How many will be on the market
+    \end{itemize}
+
+    \textbf{Free Market (Capitalism}
+
+    - All economic questions are answered exclusively by market interactions, without government involvement.
+
+    Adam Smith - A big figure in economics. He wrote a book called \textit{"The Wealth of Nations"}. The book, which was over 300 pages in length, was published in 1776, the same year America won its independence from Great Britain. He essentially said, "In order for a country to grow and prosper, the government needs to stay out of the economy. Let the citizens figure it out. Ultimately, if you let the individuals pursue their own interests, the entire nation benefits."
+
+    Market Mechanism -  Informal communication between producers and consumers to determine output and prices.
+
+    "The Invisible Hand" - Adam Smith's belief that market forces ("the invisible hand") will guide the market in the right direction, without government influence/assistance.
+
+    Markets are self-correcting.
+
+    The United States is not a completely capitalist nation. The government does step in to control the market occasionally.
+
+    \textbf{Communism (Command) Economy}
+
+    The government owns and allocates all of the nation's resources. All central economic decisions are made by the government.
+
+    Karl Marx - Author of the Communist Manifesto. A 6-9 page pamphlet that laid the foundation for Communism. Unlike modern implementations of Communism, he felt that Capitalism is great... if you are the capitalist. You will prosper if you are the producer, however it is difficult to become one. In other words, the 1\% will be great. The other 99\% are destined to be workers for their entire lives. He felt that equity is more important than wealth. He felt that there should be no class system, that all people are equal. They should have equal share of resources. No matter where they live, they will be paid the same, they will live in near-identical homes, and their clothes will be more or less the same. It doesn't matter how hard you work, there will be a completely-level playing field.
+
+    For example, employees who come in early, eat lunch at their desk, and leave late will be paid the same as employees who are by-the-book, and employees who arrive late, leave early, and do not do much work.
+
+    When you have a system that does not offer incentives to work hard, people will do less, because there is nothing in it for them. No raises, no promotions, nothing. As a result, production across the entire nation will go down, and ultimately cause the economy to implode. Which is exactly what happened in the former Soviet Union. If it \textit{worked}, the Soviet Union would still exist today.
+
+    Marx's idea was good in theory, but in practice did not positively affect the economy.}
+
+    \item{\textbf{Government can sometimes improve market outcomes}
+
+    Market Failure - An imperfection or flaw in the market mechanism that prevents us from reaching our desired outcome.
+
+    \textbf{Causes of Market Failure}
+
+        \begin{itemize}
+            \item{\textbf{Market Power}
+        
+            The ability of a firm to alter or control the market price of a good or service. Avoid the market mechanism, and alter the output to their benefit.}
+
+            \item{\textbf{Externalities}
+
+            The costs or benefits of a market activity that spill over to a third party. 
+        
+            \textbf{External Cost (Negative Externality}
+            If one person/party has an extra cost, or \textit{Negative Externality}, that activity will have a negative impact on a third (or fourth, fifth, ...) party.
+
+            \textit{Example: Smoking}
+
+            We all know smoking is unhealthy, yet some people choose to engage with the activity anyway. The person smoking is aware of the risks, yet choose to take them anyway. However, people nearby suffer the same consequences by being in close proximity (second-hand smoke).
+
+            The social demand is the ideal - what society wants. In this case, the social demand is to not produce anything. The market demand is the reality. It is greater than the social demand. In this case, the market demand is for producers to produce cigarettes and other tobacco products.
+
+            The goal is to close the gap between the actual (market) demand, and the ideal (social) demand. In most cases, this can be done by affecting the people's wallets. Some things that can be done include taxing the item or raising the price. As a direct result, consumers may rethink their financial choices by either buying less, or stop buying altogether.
+
+            A tax imposed on a specific good or service is called and \textit{excise tax}. An example of this are tobacco-based products, alcohol, and gasoline. By implementing this tax on certain items, you raise the price, and hopefully provide an incentive to stop people from buying it.
+
+            Public Service Announcements (PSA), advertisements, awareness. By raising awareness of the repercussions, people are more likely to respond to the message being sent.
+
+            Another solution is to pass laws that impact the ability to consume goods. An example of this is setting an age-limit on purchasing tobacco-based products and alcohol, as well as creating non-smoking areas in public areas, restaurants, hotels, etc.
+
+            \item{\textbf{Positive Externality (External Benefit)}
+
+            Activity engaged in by  one person has a positive impact on a 3rd party
+
+            \textbf{Examples:}
+                \begin{itemize}
+                    \item{\textit{Vaccines}}
+                    \item{\textit{Higher Education}
+
+                    \begin{itemize}
+                        \item{Scholarships/grants. Colleges receive funding from the government}
+                        \item{Student loans}
+                        \item{Public university systems}
+                    \end{itemize}}
+                \end{itemize}
+            }}
+            
+            \item{\textbf{Mixed Economy}}
+
+            An economic system based upon free market principles, but allows for government interference when necessary. It was strongly advocated for by John Maynard Keynes. Wheres Adams said the markets would correct themselves, Keynes was concerned about how long it would take for the market to recover. As a result, he advocated for policy interventions, particularly \textit{fiscal policy}.
+
+            \begin{itemize}
+                \item{\textbf{Monetary policy}
+            
+                The use of money supply and credit to alter economic outcomes.}
+
+                \item{\textbf{Fiscal policy}
+
+                The use of government spending and taxes to alter economic outcomes. Fiscal policy can sometimes has a more immediate effect on the economy, but it depends on what the government is spending money on.}
+            \end{itemize}
+        \end{itemize}}
+
+    \item{\textbf{A country's standard of living depends upon its ability to produce goods and services.}
+
+    \textbf{Quality of life} - Measures the nation's ability to provide quality to the way the people of that nation live (Healthcare, education, etc.).
+
+    \textbf{Standard of living} - Measures how much you have, in terms of currency/monetary value. Quantitative, rather than qualitative. Measured by dividing the GDP by population.
+
+    If we as a nation increased production, there would be an increase in labor hired. This would lead to an increase in income. When income increases, there is an increased demand for goods and services. In response to this, production increases. This is a cycle.}
+
+    \item{\textbf{Prices rise when the government prints too much money}
+
+    \textbf{Inflation} - An increase in the average of overall price level.}
+
+    Consumer Price Index (CPI) - Measures consumer inflation. \textit{Goal = +/- 2\%/year}
+
+    "Prints" money - As money supply increases, the price of money interest decreases, which leads to a greater demand for money. As a result, spending increases, which also causes prices to increase.
+
+    \item{\textbf{Society faces a short-run trade-off between unemployment and inflation.} When the unemployment rate is higher, the government will do things to make sure you have money, and once you have money to spend, production increases, and unemployment decreases. When the government tries to reduce unemployment (eg. provide an incentive for producers to hire people when they don't really need to), money needs to be put in the hands of consumers. Once this takes hold, and they are spending it, producers respond by producing more and increasing hiring. This depends on the severity of the situation/how suddenly it happened, because it takes time to address these issues. This causes demand for goods and services to increase; however, it also causes prices to increase. 
+    
+    That is the trade-off. We are willing to accept some inflation, if it means people stay employed. The government also tries to let it resolve organically, which is why they don't intervene in the economy immediately.}
+    
+\end{enumerate}
+
+\section{Economic Models}
+
+A simplified version of the real word used to explain and/or forecast economic activity
+
+    \subsection{Circular Flow}
+    
+    A visual model of a market-based economy. It shows how market participants interact with one another in different markets.
+    
+    There are \textbf{four} participants, each of whom participates in the economy for different reasons.
+    \begin{enumerate}
+        \item{\textbf{Consumers} - Individuals and households. As consumers, we all have limitations that we face financially, or \textit{budget constraint}. However, our goal is to buy as much as we can with the money we have. This concept is called \textit{Utility}, or the amount of happiness obtained from the consumption of goods and services. Therefore, our goal is to maximize utility.}
+
+        \item{\textbf{Producers} - Businesses, firms, suppliers. Their goal is to maximize profit. The profit that any firm makes depends on two things - how much money they bring in (their total revenue), subtracted by their total costs. To achieve that, they must bring in more than they spend. That includes keeping labor low, and raising prices. Hence creating the first conflict of the economy. In other words, Producers are trying to charge as much as possible, and Consumers aim to spend as little as possible.}
+
+        \item{\textbf{Government} - This includes all levels of government: local, state, and federal. The goal of any government is to maximize the well-being of society. How that is accomplished may be questionable at times (eg. dictatorships and other authoritarian governments). A common first thought is that the goal of government is to tax as much as possible, but the reality is that tax income is used to create programs to improve the society's well-being.}
+
+        \item{\textbf{International participants} - People from around the world participate in our economy to achieve their own goals. Foreign consumers participate for the same reason as domestic consumers: to maximize their utility. Foreign producers participate in our economy for the same reason as domestic producers do: to maximize their profits, and increase market share. Foreign governments participate in our economy as our own government - to maximize social well-being.}
+    \end{enumerate}
+
+    \textbf{Types of markets}:
+    \begin{enumerate}
+        \item{\textbf{Product market (PM)} - A market in which final products (goods and services) are exchanged.
+        
+        Demand = Consumer
+        
+        Supply = Producer}
+        \item{\textbf{Factor market (FM)} - A market in which factors of production (resources) are bought and sold.
+        
+        Demand = Producer
+        
+        Supply = Consumer}
+    \end{enumerate}
+
+    \textbf{Four factors of production}:
+    \begin{enumerate}
+        \item{\textbf{Land} - The amount of land available, including natural resources available within the land}
+        \item{\textbf{Labor} - The size of the nation's labor force, as well as their level of skill. A large labor force of unskilled workers is not as productive as a smaller labor force of skilled workers.}
+        \item{\textbf{Capital} - \textbf{NOT} money. Any physical plant, property, equipment, or technology used to produce a final good or service.}
+        \item{\textbf{Entrepreneurship} - The traditional definition is (something something small businesses - add later). The \textit{economic} definition is: Individuals who use existing technology in new and innovative ways. Their inventions change the way we live and work daily.}
+    \end{enumerate}
+
+    \subsection{Production Possibilities Curve} - A graph that shows the maximum combination of output a nation is capable of producing given its currently available resources and technology.
+    
+    A good analogy is the production possibilities curve being a snapshot, or a photograph. At any moment in time, you can take a snapshot of what a nation is capable of producing in that moment. Think of it like picture day at school. You take a picture from now, and compare it to your younger self. Your size, intelligence, and earning power is much greater now than it was when you were a child. You also have more technology and resources at your disposal. Think of the economy in the same way. 
+  
+    The economy 10-15 years ago is very different-looking than the "snapshot" today. So, we take a snapshot each year. We can assume, as we take snapshots year after year, our technology and resources are much better than they were back in the day. We have to live in the moment that the snapshot is providing, with the understanding that we are limited to the technology and resources we have access to today, with the expectation that it will increase in the future.
+    
+    Assume that the USA only produces two things: bread and wine. Also, assume that our technology and resources today are fixed. We are stuck with what we have available to us today, but it will improve in the future. With these assumptions in mind, we are going to draw a graph. The Y-axis will be wine, and the X-axis will be bread. The graph shows us the maximum combination of output we can provide, given the technology and resources we have available to us.
+
+    (draw graph later, it looks like 1/4 of a circle)
+
+    The \textbf{Law of Increasing Opportunity Costs} states that in order to produce more of a good, society must sacrifice increasingly larger quantities of another. Resources are not perfectly transferable. All points on the production possibilities curve are \textit{efficient}. Maximum output from resources used in production. All points inside/under the curve represent inefficient use of resources, including labor. Points outside/above the curve are currently unattainable but may be achieved in the future. Better technology, new resources, larger labor force, better education and training.
+
+    \textbf{Economic Growth} is purely defined by how much we are producing. Are we producing more than we were 3 months or 6 months ago? Will we be producing more in 6 months than we are now? Economic Growth is the increase in a nation's output as measured by GDP. It is also an expansion of a nation's production possibilities curve.
+
+    The \textbf{Optimal Mix of Output} is the most desired point on a nation's production possibilities curve. Once we have an optimal point determined, any other point, even if it is on the curve, is considered market failure.
+
+\section{Supply and Demand Analysis}
+The "Holy Grail" of economics, supply and demand represents two sides of the market. The market is the relationship between consumers and producers. The buyer, or consumer, represents the "demand" side of the market. The seller, or producer, represents the "supply" side of the market.
+
+\subsection{Demand}
+
+\textbf{Demand} is the specific quantity of a good or service that consumers are willing and able to buy at ultimate prices in a given time period. \textit{Ceteris Parabus} is a Latin phrase meaning \textit{"All things remain equal/constant"} - nothing changes. As a reminder, the consumers' goal is to maximize \textbf{Utility}. Utility is the amount of satisfaction obtained through the consumption of goods and services. To maximize utility, prices matter a lot. As prices decrease, our ability to maximize utility increases.
+
+\textbf{Law of Demand} - As demand increases, quantity decreases, and vice versa.
+
+Non-Price Determinants of Demand
+
+\begin{enumerate}
+    \item{\textbf{Income}} - As income increases, your demand for goods and services increases. Inversely, as income decreases, your demand for goods and services decreases.
+    \item{\textbf{Quality}} - As quality increases, demand increases. Inversely, as quality decreases, demand decreases.
+    \item{\textbf{Taste or Preferences}} - When there is an increase in taste or preference for something, the demand increases. Inversely, as taste or preference for something decreases, the demand decreases.
+\end{enumerate}
+
+Determination of Demand
+\begin{itemize}
+    \item Income
+    \item Quality
+    \item Taste/preference
+    \item Number of buyers
+    \item Other goods
+    \item Expectations
+\end{itemize}
+
+\textbf{Gross Domestic Product (GDP)} - The total market value of all goods and services produced within the borders of a nation in a given period of time.
+
+\textbf{Expenditure Approach} - Way of calculating GDP based upon who the recipient of the final goods and services are.
+
+\textbf{Investment} - Producers' share of our output (GDP). Defined as expenditures by businesses on new plant, property, and equipment - also known as \textit{Investment Spending}. Investment spending is roughly \textbf{18\%} of our GDP.
+
+\textbf{Government Spending} - Expenditures by the government on final goods and services. Includes local, state, and federal governments. Does \textit{not} include income transfers.
+
+\textbf{Income Transfer} - Payment to a individual for which no specific good or service is exchanged. Some examples include Social Security and Unemployment checks. Roughly \textbf{17\%} of our GDP.
+
+\textbf{Net Exports} - Value of a nation's exports, subtracted by the value of its imports. \textbf{Exports} are goods produced domestically and sold abroad. \textbf{Imports} are goods produced overseas and sold domestically. Roughly \textbf{-3\%} of our GDP.
+
+\section{Macroeconomic Goals}
+\textbf{Three Macroeconomic Goals}
+\begin{itemize}
+    \item{Economic growth (GDP)}
+    \item{Full employment (lower unemployment rate)}
+    \item{Price Stability}
+\end{itemize}
+
+\subsection{Price Stability}
+\textbf{Price Stability} is the absence of any significant change in price level. Ideal change is +/- 2\% per year.
+
+\textbf{Inflation} - Increase in the average price level.
+
+\textbf{Deflation} - Decrease in the average price level.
+
+\textbf{Base year} - Beginning year used in comparative analysis.
+
+\textbf{Price index} - Index used to measure the price of goods today compared to an earlier time period.
+
+\textbf{Consumer Price Index (CPI)} - An index that measures the change in the average price level of consumer goods and services.
+
+\textbf{Basket of Goods}
+\begin{itemize}
+    \item{\textbf{Food and Beverages} - 15\%}
+    \item{\textbf{Apparel} - 4\%}
+    \item{\textbf{Housing} - 43\%}
+    \item{\textbf{Recreation} - 6\%}
+    \item{\textbf{Transportation} - 17\%}
+    \item{\textbf{Education and Communications} - 6\%}
+    \item{\textbf{Medical Care} - 6\%}
+    \item{\textbf{Other} - 3\%}
+\end{itemize}
+
+\textbf{Other Price Indices}
+\begin{itemize}
+    \item{\textbf{Producer Price Index (PPI)} - An index that measures the change in the average price of producers' resources.}
+    \item{\textbf{Leading indicator} - This gives us an idea of what will happen in the future (3 months).}
+    \item{\textbf{GDP Deflator} - An index that measures the change in the average price level of all goods and services included in the GDP. Used to convert nominal GDP to real GDP. \textit{Real GDP = Nominal GDP / GDP Deflator}}
+\end{itemize}
+
+\subsection{Causes of Inflation}
+\begin{itemize}
+    \item{\textbf{Demand-Pull Inflation} - Increase in the average price level caused by excessive demand for goods and services.}
+    \item{\textbf{Cost-Push Inflation} - Increase in the average price level caused by an increase in the producers' cost of production.}
+\end{itemize}
+
+\section{Unemployment and its Natural Rate}
+\subsection{Identifying Unemployment}
+Most people rely on their income to maintain their standard of living. As such, unemployment can be one of the most distressing economic events in an individual's life. A country that saves and invests a higher fraction of its income enjoys more rapid growth in GDP than a similar country that saves and invests less.
+
+\subsection{How is Unemployment Measured?}
+Unemployment is measured by the Bureau of Labor Statistics (BLS), part of the Department of Labor. Every month, they collect data on unemployment and other aspects of the labor market, such as types of employment, length of the workweek, and the duration of unemployment. This data comes from a survey of roughly 60,000 to 70,000 households, called the \textbf{Current Population Survey}.
+
+Specifically, the unemployment rate is calculated using the following formula: \textit{(number of unemployed individuals / labor force) * 100}. \textbf{Labor Force} is the sum of both employed and unemployed individuals. The BLS calculates unemployment rates for the entire adult population, and specific groups such as race, gender, etc.
+
+\subsection{Unions and Collective Bargaining}
+A \textbf{labor union} is a worker association that bargains with employers over wages, benefits, and working conditions. The total percentage of members of the US labor force who belong to labor unions is relatively small - roughly 11\% as of 2018. However, labor unions played a much bigger role in the US labor market in the 1940s and 1950s. At its peak, about 1/3 of the US labor force was unionized.
+
+To more accurately describe a labor union, think of it like a type of cartel. A labor union is a group of sellers acting together in the hope of exerting their join market power. Most workers in the US discuss their salaries, benefits, and working conditions with their employers as individuals. By contrast, workers in labor unions do so as a group. This is known as \textbf{Collective Bargaining}.
+
+\subsection{Minimum Wage Laws}
+\textbf{Minimum Wage} is the legal minimum wage a worker can be paid. Minimum wages are not the predominant reason for unemployment in our economy, but they have an important effect on certain groups with particularly high unemployment rates. While minimum wage laws are one reason unemployment exists in the American economy, they do not affect everyone. The vast majority of workers have wages above the legal minimum, so the law does not prevent most wages from adjusting to balance supply and demand.
+
+Minimum wage laws matter most for the least skilled and least experienced members of the labor force, such as teenagers. Their equilibrium wages tend to be low, and therefore fall under the legal minimum.
+
+Minimum wage workers are more likely to be working part-time. Part-time is considered to be less than 35 hours per week. 10\% of part-time workers are paid the minimum wage or less, compared to 2\% of full-time workers. The industry with the highest proportion of workers with reported hourly wages at or below the minimum wage is leisure, hospitality \& food service, and retail (18\%). For many of these workers, tips supplement the hourly wages received.
+
+\section{The Economy As a Whole and Policy Options}
+
+\subsection{Business Cycles}
+\textbf{Business Cycles} are alternating periods of economic growth and contraction.
+
+\subsubsection{4 Phases of a Business Cycle}
+\begin{itemize}
+    \item{\textbf{Growth} - GDP increases, and the unemployment rate decreases. The price level also increases.}
+    \item{\textbf{Peak} - All economy activity reaches its maximum amount. The GDP reaches its highest number for that period, because producers have reached their maximum production level, and they aren't hiring anymore people, so unemployment is at its lowest rate. The price level is also at its maximum.}
+    \item{\textbf{Contraction} - The GDP decreases, unemployment rate starts to increase as companies start laying off employees. The price level also decreases.}
+    \item{\textbf{Trough} - GDP is at its lowest. The unemployment rate reaches its highest level. Prices are at their lowest levels.}
+\end{itemize}
+
+\textbf{Two options for intervention}
+\begin{itemize}
+    \item{\textbf{Fiscal Policy} - Use of government spending and taxes to alter economic outcomes. Controlled by Congress and the Executive Branch of the government.}
+    \item{\textbf{Monetary Policy} - Use of money supply and credit to alter economic outcomes. Controlled by the Federal Reserve, the United States' federal bank. Different from other national banks, because it is not necessarily part of the government. It makes its own decisions and acts independently, without needing approval from the rest of the government. The economy provides an advantage to the Federal Reserve, allowing them to act swiftly.}
+\end{itemize}
+
+\textbf{Aggregate} - Combine
+
+\subsection{Aggregate Demand}
+\textbf{Aggregate Demand (AD)} - The total quantity of output demanded within the economy at alternate price levels in a given time period.
+
+Individual demand (right arrow) market (right arrow) Aggregate
+
+\textbf{Four Participants}
+\begin{itemize}
+    \item{Consumption}
+    \item{Investment}
+    \item{Government spending}
+    \item{Net exports}
+\end{itemize}
+
+\textit{Aggregate Demand = AD + I + G + (X-M)}
+
+The Aggregate Demand for the nation is the same as (or equal to) the nation's GDP.
+
+\textbf{Four components of Aggregate Demand}
+\begin{itemize}
+    \item{\textbf{Consumption (C)}
+    expenditures by households on final goods and services.
+    
+    \textbf{Factors affecting C}
+    \begin{itemize}
+        \item{\textbf{Income}}
+        \item{\textbf{Interest rates} - Interest is the price you pay to borrow money. Increased interest rates lead to a decrease in borrowing and consumption, and a decrease in interest rates result in increased borrowing and  consumption.}
+        \item{\textbf{Taxes} - Disposable Income  = \textit{Personal Income - Personal Taxes}
+        Increased taxes leads to decreased disposable income and consumption. Decreased taxes leads to increased disposable income and consumption.}
+        \item{\textbf{Expectations}
+        \begin{itemize}
+            \item{Economy}
+            \item{Price levels}
+            \item{Taxes}
+            \item{Interest rates}
+        \end{itemize}}
+    \end{itemize}}
+    \item{\textbf{Investment (I)} - Expenditures by businesses on plant, property, equipment, technology, etc.
+    
+    \textbf{Factors affecting I}
+    \begin{itemize}
+        \item{Technology and innovation}
+        \item{Expectations}
+        \item{Interest rates}
+    \end{itemize}}
+    \item{\textbf{Government Spending (G)} - Expenditures by government agencies on final goods and services. Levels of government spending depends on the government budget, which varies by local, state, and federal governments.
+    
+    \textbf{Mandatory Spending} - Spending that has been committed to through prior legislation.
+    
+    \textbf{Discretionary Spending} - Spending that has not been committed to through prior legislation.}
+    \item{\textbf{Net Exports (X - M)} - Value of a nation's exports (X) subtracted by the value of imports (M).
+    
+    Net exports affected by:
+    \begin{itemize}
+        \item{\textbf{Trade policy and agreements}}
+        \item{\textbf{Exchange Rates} - Value of one nation's currency expressed in terms of another nation's currency.}
+        \item{\textbf{Appreciation} - One currency increasing in value compared to another.}
+        \item{\textbf{Depreciation} - One currency decreasing in value compared to another.}
+    \end{itemize}}
+    \textbf{Reasons why AD curve is negatively sloped:}
+    \begin{itemize}
+        \item{\textbf{Wealth Effect} - As price level falls, the purchasing power of the consumer increases. Spending also increases.}
+        \item{\textbf{Interest Rate Effect} - As price level falls, the need to borrow money also falls. Banks decrease interest rates to attract borrowers. Consumers and producers borrow money as interest rates decrease. Spending (demand) also increases.}
+        \item{\textbf{Foreign Trade Effect (Exchange Rate Effect} - Price levels in the US fall, resulting in domestic goods becoming relatively cheaper than goods from other nations. This results in demand for domestically-produced goods increasing both domestically and internationally. Decreased price level results in increased Aggregate Demand.}
+    \end{itemize}
+\end{itemize}
+
+    Changes in Aggregate Demand will result from changes in spending levels by the four participants. Increased consumption equals increased disposable income, decreased taxes, decreased interest rates, and positive expectations. Inversely, decreased consumption results in decreased aggregate demand, shifting the aggregate demand curve to the left. This results from decreased income, increased taxes, increased interest rates, and negative expectations. 
+    
+    Increased investment spending shifts the aggregate demand curve to the right. This results from advances in technology and innovation, decreased interest rates, decreased taxes, and positive expectations. Inversely, decreased investment spending shifts the aggregate demand curve to the left. This results from decline in technology, increased interest rates, increased taxes, and negative expectations. 
+    
+    Increased government spending shifts the aggregate demand shift to the right. Inversely, decreased spending shifts the aggregate demand curve to the left. In other words, \textbf{Positive changes shift the aggregate demand curve to the right}, and \textbf{Negative changes shift the aggregate demand curve to the left.}
+    
+\textbf{Disposable Income (DI)} - After tax income of consumer.
+
+\textbf{Savings} - Disposable income not spent - not used for consumption.
+
+\textit{DI - Consumption + Savings}
+
+\textbf{Recessionary Gap} - The amount by which the current GDP falls short of full employment GDP.
+
+\textbf{Inflationary Gap} - The amount by which the current GDP exceeds the full employment GDP.
+
+\textbf{2 Policies}
+\begin{itemize}
+    \item{\textbf{Monetary Policy} - The use of money supply and credit to alter economic outcomes.}
+    \item{\textbf{Fiscal Policy} - The use of government spending and taxes to alter economic outcomes.}
+\end{itemize}
+
+\subsection{Monetary Policy}
+
+The \textbf{Central Bank} is the primary monetary authority of a nation. In most countries, the central bank is embedded within the federal government. Not in the United States. The Federal Reserve is not part of the government. They do not have to answer to the government. As an institution, the Federal Reserve have four responsibilities:
+
+\begin{itemize}
+    \item{\textbf{Conduct the nation's monetary policy in pursuit of three goals} - economic growth, full employment, and stable pricing.}
+    \item{\textbf{Supervise and regulate banks and financial institutions that are part of the Federal Reserve system.} It is important to note some banks were not part of the Federal Reserve system prior to 2008. Some examples were investment banks such as Goldman Sachs or Bear Stearns. This changed in 2008 when the financial crisis began. The Federal Reserve was only "bailing out" banks that were part of the Federal Reserve system. As a result, many investment banks changed their status from investment bank to "bank holding company", allowing them to join the Federal Reserve system.}
+    \item{\textbf{Maintain the stability of the financial system}. Contain any systemic risks that may be present.}
+    \item{\textbf{Provide financial services to depository institutions, the US government, and to foreign institutions who are conducting business in the US.} Some examples are TD (Toronto-Dominion), which is a Canadian institution, and HSBC, which is based in Hong Kong.}
+\end{itemize}
+
+The Federal Reserve was created by the \textbf{Federal Reserve Act} in 1913. It created a central bank under public control.
+
+\textbf{Three Parts of the Federal Reserve}
+\begin{itemize}
+    \item{Board of Governors}
+    \item{Reserve Banks}
+    \item{Federal Open Market Committee (FOMC}
+\end{itemize}
+
+\textbf{Board of Governors} - The core of the system. Its primary responsibility is the formulation of the nation's monetary policy. It is located in Washington, DC. The members of the board are called governors. They are appointed by the President and confirmed by the Senate. Each governor can only serve one 14 year term. The reason for this is because presidential appointments are political by nature. The purpose of the Federal Reserve is to be politically separate from the government. The point of the Board of Governors is to be as diverse as possible. There are 7 members. As part of those 7 members, the President of the United States will nominate one individual as the Chairperson, who is also confirmed by the Senate. That individual becomes the face of the Federal Reserve. They report to Congress. The Chairperson serves a 4 year term and can be re-appointed, however they are not exempt from the 14-year term limit. The board formulates policies, which determine the following:
+\begin{itemize}
+    \item{\textbf{Reserve requirements}}
+    \item{\textbf{Discount Rate}}
+    \item{\textbf{Open Market operations}}
+\end{itemize}
+
+\textbf{Reserve Banks} - If the Board of Governors is the queen bee, the Reserve Banks are the worker bees. They are the operating arm of the Federal Reserve. The United States is split in to 12 regions, or Reserve Banks. Each of whom has a president who oversees that region. They report back to the main Federal Reserve in Washington, DC. They have a lot of responsibilities. They provide services to banks (bankers' bank), the government, and the public within their region. They supervise banks within their region. They move currency and coin in and out of circulation. They provide checking accounts for the US Treasury. They issue and redeem government securities. They participate in the formulation of monetary policy by providing data and conducting research about their particular district.
+
+The Federal Reserves are located in the following 12 cities:
+\begin{itemize}
+    \item{New York, NY}
+    \item{Chicago, IL}
+    \item{Boston, MA}
+    \item{Dallas, TX}
+    \item{San Francisco, CA}
+    \item{Saint Louis, MO}
+    \item{Philadelphia, PA}
+    \item{Cleveland,  OH}
+    \item{Atlanta, GA}
+    \item{Minneapolis, MN}
+    \item{Kansas City, MO/KS}
+    \item{Richmond, VA}
+
+\textbf{Federal Open market Committee (FOMC}
+The most important policy-making part of the Federal Reserve. The members of the FOMC include the 7 members of the Board of Governors and all 12 Reserve Bank Presidents. The President of the Federal Reserve Bank of New York serves as the Chairperson of the FOMC. Only 5 Reserve Bank Presidents have voting rights. The President of the FRBNY always has voting rights, and the remaining 4 Presidents rotate annually. Their primary responsibility as members of this committee is to conduct open market operations. Open market operations are the buying and selling of US government bonds for the purpose of altering the money supply.
+
+\end{itemize}
+\begin{proposition}
+    This is a proposition.
+\end{proposition}
+
+\begin{principle}
+    This is a principle.
+\end{principle}
+
+% Maybe I need to add one more part: Examples.
+% Set style and colour later.
+
+\subsection{Pictures}
+
+\begin{figure}[htbp]
+    \center
+    \includegraphics[scale=0.06]{img/photo.jpg}
+    \caption{Sydney, NSW}
+\end{figure}
+
+\subsection{Citation}
+
+This is a citation\cite{Eg}.
+
+\newpage
+
+% ------------------------------------------------------------------------------
+% Reference and Cited Works
+% ------------------------------------------------------------------------------
+
+\bibliographystyle{IEEEtran}
+\bibliography{References.bib}
+
+% ------------------------------------------------------------------------------
+
+\end{document}
